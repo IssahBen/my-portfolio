@@ -145,12 +145,18 @@ function Intro() {
       <div className="flex justify-center mb-2">
         <p className="text-cool_gray tracking-wide text-center">
           Hi, I'm Benedict Issah.A passionate Fullstack Developer based in
-          Canada,Winnipeg. 📍
+          Winnipeg,Canada. 📍
         </p>
       </div>
-      <div className="flex justify-center gap-5">
+      <div className="flex justify-center mt-5 gap-5">
         <img src="/assets/linkedin.png" alt="" className="h-[2rem]" />
-        <img src="/assets/github.png" alt="" className="h-[2rem]" />
+        <a
+          href="https://github.com/IssahBen"
+          className="hover:-translate-y-2 hover:scale-100"
+        >
+          {" "}
+          <img src="/assets/github.png" alt="" className="h-[2rem] " />
+        </a>
       </div>
     </div>
   );
