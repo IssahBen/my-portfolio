@@ -96,7 +96,7 @@ function Project({ title, stack, links, content }) {
       <img
         src={links[0]}
         alt=""
-        className="w-full md:w-2/3 h-[450px] rounded-md "
+        className="w-full md:w-2/3 h-[500px] rounded-md "
       />
       <div className="flex flex-col md:w-1/3">
         <div className="flex justify-center mt-5">
