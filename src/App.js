@@ -320,12 +320,12 @@ function NavBar() {
 function Footer() {
   return (
     <>
-      <section id="contacts" class="font-serif">
+      <section id="contacts" className="font-serif">
         <p className="section__text__p1">Get in touch</p>
         <h1 className="title">Contact</h1>
         <div className="contact-info-upper-container">
           <div className="contact-info-container">
-            <img src="./assets/email.png" class="email-icon" />
+            <img src="./assets/email.png" className="email-icon" alt="email" />
             <p>
               {" "}
               <a href="mailto:benedictissah@gmail.com">
@@ -334,9 +334,12 @@ function Footer() {
             </p>
           </div>
           <div className="contact-info-container">
-            <img src="./assets/linkedin.png" className="icon contact-icon" />
+            <img
+              src="./assets/linkedin.png"
+              className="icon contact-icon"
+              alt="linkedin"
+            />
             <p>
-              {" "}
               <a href="https://www.linkedin.com">Linkedin</a>
             </p>
           </div>
