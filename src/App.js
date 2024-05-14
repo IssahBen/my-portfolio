@@ -38,7 +38,15 @@ export default function App() {
       </div>
 
       <Skills />
-      <div id="skills" className="flex justify-center mb-10">
+      <div className="flex flex-col items-center mb-10">
+        <div className="flex flex-col  w-full pl-8 items-start">
+          <h3 className="font-bold text-xl font-serif text-blue-800">
+            Portfolio
+          </h3>
+          <p className="font-extrabold text-2xl">
+            Each project is a unique place of development🌱
+          </p>
+        </div>
         <div id="projects" className="grid grid-cols-1 ">
           <Project
             title={"WeVote App"}
@@ -85,8 +93,12 @@ export default function App() {
 function Project({ title, stack, links, content }) {
   return (
     <div className="flex md:flex-row flex-col p-8 md:space-x-5 ">
-      <img src={links[0]} alt="" className="w-full h-[450px] " />
-      <div className="flex flex-col">
+      <img
+        src={links[0]}
+        alt=""
+        className="w-full md:w-2/3 h-[450px] rounded-md "
+      />
+      <div className="flex flex-col md:w-1/3">
         <div className="flex justify-center mt-5">
           <p className="font-bold text-xl tracking-wide text-marine_blue font-serif">
             {title}
@@ -174,7 +186,7 @@ function AboutMe() {
 
 function Skills() {
   return (
-    <div className="flex justify-center mt-5 p-5">
+    <div id="skills" className="flex justify-center mt-5 p-5">
       <div className="grid gap-5 grid-cols-3">
         <div className="flex items-center text-xl font-bold font-mono">
           <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
@@ -243,7 +255,7 @@ function HamburgerMenu() {
       <div
         id="menu"
         ref={mobileMenu}
-        className="absolute top-0 right-0 hidden flex-col   w-1/2 h-72 py-1 pt-12 pl-12 space-y-3 text-lg text-marine_blue uppercase bg-white"
+        className="absolute top-0 right-0 hidden flex-col z-4  w-1/2 h-72 py-1 pt-10 pl-24 space-y-2 text-lg text-marine_blue uppercase bg-white"
       >
         <a
           href="#home"
@@ -277,26 +289,26 @@ function HamburgerMenu() {
 function NavBar() {
   return (
     <div className="hidden h-10 font-serif font-bold md:flex md:space-x-8">
-      <div className="group">
-        <a href="#home" className="hover:text-pink-500 btn">
+      <div className="group hover:btn">
+        <a href="#home" className="hover:text-pink-500 ">
           Home
         </a>
         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
       </div>
-      <div className="group">
-        <a href="#about" className="hover:text-pink-500 btn">
+      <div className="group hover:btn">
+        <a href="#about" className="hover:text-pink-500 ">
           About
         </a>
         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
       </div>
-      <div className="group">
-        <a href="#projects" className="hover:text-pink-500 btn">
+      <div className="group hover:btn">
+        <a href="#projects" className="hover:text-pink-500 ">
           Projects
         </a>
         <div className="mx-2 group-hover:border-b group-hover:border-blue-50 "></div>
       </div>
-      <div className="group">
-        <a href="#contact" className="hover:text-pink-500 btn">
+      <div className="group hover:btn">
+        <a href="#contact" className="hover:text-pink-500 ">
           Contact
         </a>
         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
