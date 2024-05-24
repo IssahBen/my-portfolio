@@ -4,9 +4,10 @@ export default function App() {
   return (
     <div className="h-screen w-screen bg-white flex flex-col ">
       <div className="flex justify-between items-center px-10 py-10">
-        <h1 className="font-sans font-bold text-4xl text-marine_blue">
+        {/* <h1 className="font-sans font-bold text-4xl text-marine_blue">
           Ben.dev
-        </h1>
+        </h1> */}
+        <img src="/assets/push2.png" className="h-[120px] flip " alt="logo" />
         <HamburgerMenu />
         <NavBar />
       </div>
@@ -51,13 +52,13 @@ export default function App() {
           <Project
             title={"WeVote App"}
             stack={["Ruby On Rails 7", "Bootstrap5"]}
-            links={["/assets/vote.png", "", ""]}
+            links={["./assets/vote.png", "", ""]}
             content={[]}
           />
           <Project
             title={"TheSoundz Store"}
             stack={["Ruby On Rails 7", "Bootstrap5"]}
-            links={["/assets/soundz3.jpeg", "", ""]}
+            links={["./assets/soundz3.jpeg", "", ""]}
             content={[]}
           />
           <Project
@@ -69,19 +70,23 @@ export default function App() {
           <Project
             title={"Product Funding Interactive Website "}
             stack={["Vanilla Js", "Tailwind Css"]}
-            links={["/assets/product.png", "", "https://sikasem.netlify.app/"]}
+            links={["./assets/product.png", "", "https://sikasem.netlify.app/"]}
             content={[]}
           />
           <Project
-            title={"Entertainment Web App "}
-            stack={["React Js", "Tailwind Css"]}
-            links={["/assets/movies.jpeg", "", ""]}
+            title={"CandyCrusher  "}
+            stack={["React Js", "Tailwind Css", "Ruby on Rails"]}
+            links={[
+              "./assets/p1.png",
+              "https://github.com/IssahBen/candy-crush-react",
+              "https://candycrusher.netlify.app/",
+            ]}
             content={[]}
           />
           <Project
             title={"DevJobs Web App"}
             stack={["React Js", "Tailwind Css"]}
-            links={["/assets/jobs.jpeg", "", ""]}
+            links={["./assets/jobs.jpeg", "", ""]}
             content={[]}
           />
         </div>
@@ -93,11 +98,15 @@ export default function App() {
 function Project({ title, stack, links, content }) {
   return (
     <div className="flex md:flex-row flex-col p-8 md:space-x-5 ">
-      <img
-        src={links[0]}
-        alt=""
-        className="w-full md:w-2/3 h-[500px] rounded-md "
-      />
+      <div className="flex justify-center items-center">
+        {" "}
+        <img
+          src={links[0]}
+          alt=""
+          className="w-[400px] md:w-2/3  bg-cover rounded-md "
+        />
+      </div>
+
       <div className="flex flex-col md:w-1/3">
         <div className="flex justify-center mt-5">
           <p className="font-bold text-xl tracking-wide text-marine_blue font-serif">
@@ -112,8 +121,9 @@ function Project({ title, stack, links, content }) {
           </p>
         </div>
         <div className="flex justify-center space-x-5 font-extrabold  font-serif mt-8">
-          <span>{stack[0]}</span>
-          <span>{stack[1]}</span>
+          {stack.map((stack) => (
+            <span key={stack}>{stack}</span>
+          ))}
         </div>
         <div className="flex justify-center mt-2 space-x-5 mt-8">
           <a
@@ -149,13 +159,13 @@ function Intro() {
         </p>
       </div>
       <div className="flex justify-center mt-5 gap-5">
-        <img src="/assets/linkedin.png" alt="" className="h-[2rem]" />
+        <img src="/assets/linkedin.png" alt="" className="h-[2rem] flip " />
         <a
           href="https://github.com/IssahBen"
           className="hover:-translate-y-2 hover:scale-100"
         >
           {" "}
-          <img src="/assets/github.png" alt="" className="h-[2rem] " />
+          <img src="/assets/github.png" alt="" className="h-[2rem] flip " />
         </a>
       </div>
     </div>
@@ -191,42 +201,32 @@ function AboutMe() {
 }
 
 function Skills() {
+  const skills = [
+    "HTML",
+    "CSS",
+    "Tailwind",
+    "React",
+    "Ruby",
+    "Hotwire",
+    "Ruby on Rails",
+    "Vanilla Js",
+    "Postgres SQl",
+  ];
   return (
     <div id="skills" className="flex justify-center mt-5 p-5">
       <div className="grid gap-5 grid-cols-3">
-        <div className="flex items-center text-xl font-bold font-mono">
-          <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
-          <span>HTML</span>
-        </div>
-        <div className="flex items-center text-xl font-bold font-mono">
-          <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
-          <span>CSS</span>
-        </div>
-        <div className="flex items-center text-xl font-bold font-mono">
-          <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
-          <span>Vanilla Javascript</span>
-        </div>
-        <div className="flex items-center text-xl font-bold font-mono">
-          <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
-          <span>Tailwind</span>
-        </div>
-        <div className="flex items-center text-xl font-bold font-mono">
-          <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
-          <span>React</span>
-        </div>
-        <div className="flex items-center text-xl font-bold font-mono">
-          <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
-          <span>Ruby on Rails</span>
-        </div>
-        <div className="flex items-center text-xl font-bold font-mono">
-          <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
-          <span>Ruby</span>
-        </div>
-        <div className="flex items-center text-xl font-bold font-mono">
-          <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
-          <span>Hotwire</span>
-        </div>
+        {skills.map((skill) => (
+          <Skill key={skill}>{skill}</Skill>
+        ))}
       </div>
+    </div>
+  );
+}
+function Skill({ children }) {
+  return (
+    <div className="flex items-center text-xl font-bold font-mono pulse ">
+      <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
+      <span>{children}</span>
     </div>
   );
 }
@@ -370,7 +370,7 @@ function Footer() {
             </ul>
           </div>
         </nav>
-        <p>Copyright &#169; 2024 Menyinda.All Rights reserved.</p>
+        <p>Copyright &#169; 2024 Ohiahene.All Rights reserved.</p>
       </footer>
     </>
   );
