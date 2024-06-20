@@ -24,7 +24,7 @@ export default function FullStack() {
           content={""}
         />
         <Project
-          title={"Instagram Clone  App"}
+          title={"Instagram Clone  App(Will rebuild)"}
           stack={["Ruby On Rails 7", "Tailwind Css"]}
           links={["./assets/insta.png"]}
           content={""}
