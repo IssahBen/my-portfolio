@@ -39,7 +39,7 @@ export default function MiniProjects() {
         />
         <Project
           title={"Remote Job Landing Page "}
-          stack={["React Js"]}
+          stack={["React Js", "Tailwind Css"]}
           links={["./assets/Remote.png", "", "https://sikasem.netlify.app/"]}
           content={""}
         />
