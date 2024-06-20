@@ -1,5 +1,8 @@
 import { useRef } from "react";
 
+import Skills from "./Skills";
+import FullStack from "./FullStack";
+import MiniProjects from "./miniprojects";
 export default function App() {
   return (
     <div className="h-screen w-screen bg-white flex flex-col ">
@@ -39,111 +42,13 @@ export default function App() {
       </div>
 
       <Skills />
-      <div className="flex flex-col items-center mb-10">
-        <div className="flex flex-col  w-full pl-8 items-start">
-          <h3 className="font-bold text-xl font-serif text-blue-800">
-            Portfolio
-          </h3>
-          <p className="font-extrabold text-2xl">
-            Each project is a unique place of development🌱
-          </p>
-        </div>
-        <div id="projects" className="grid grid-cols-1 ">
-          <Project
-            title={"WeVote App"}
-            stack={["Ruby On Rails 7", "Bootstrap5"]}
-            links={["./assets/vote.png", "", ""]}
-            content={[]}
-          />
-          <Project
-            title={"TheSoundz Store"}
-            stack={["Ruby On Rails 7", "Bootstrap5"]}
-            links={["./assets/soundz3.jpeg", "", ""]}
-            content={[]}
-          />
-          <Project
-            title={"Holla Social Media App"}
-            stack={["Ruby On Rails 7", "Tailwind"]}
-            links={[]}
-            content={[]}
-          />
-          <Project
-            title={"Product Funding Interactive Website "}
-            stack={["Vanilla Js", "Tailwind Css"]}
-            links={["./assets/product.png", "", "https://sikasem.netlify.app/"]}
-            content={[]}
-          />
-          <Project
-            title={"CandyCrusher  "}
-            stack={["React Js", "Tailwind Css", "Ruby on Rails"]}
-            links={[
-              "./assets/p1.png",
-              "https://github.com/IssahBen/candy-crush-react",
-              "https://candycrusher.netlify.app/",
-            ]}
-            content={[]}
-          />
-          <Project
-            title={"DevJobs Web App"}
-            stack={["React Js", "Tailwind Css"]}
-            links={["./assets/jobs.jpeg", "", ""]}
-            content={[]}
-          />
-        </div>
-      </div>
+      <FullStack />
+      <MiniProjects />
       <Footer />
     </div>
   );
 }
-function Project({ title, stack, links, content }) {
-  return (
-    <div className="flex md:flex-row flex-col p-8 md:space-x-5 ">
-      <div className="flex justify-center items-center">
-        {" "}
-        <img
-          src={links[0]}
-          alt=""
-          className="w-[400px] md:w-2/3  bg-cover rounded-md "
-        />
-      </div>
 
-      <div className="flex flex-col md:w-1/3">
-        <div className="flex justify-center mt-5">
-          <p className="font-bold text-xl tracking-wide text-marine_blue font-serif">
-            {title}
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <p className=" text-thin tracking-wide text-cool_gray text-center font-serif">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga amet
-            nemo facilis neque, assumenda error, corporis quibusdam quo unde non
-            dolorem voluptate quod! Quaerat sequi minima corporis nostrum esse!
-          </p>
-        </div>
-        <div className="flex justify-center space-x-5 font-extrabold  font-serif mt-8">
-          {stack.map((stack) => (
-            <span key={stack}>{stack}</span>
-          ))}
-        </div>
-        <div className="flex justify-center mt-2 space-x-5 mt-8">
-          <a
-            href={links[1]}
-            className="flex justify-center items-center border border-black rounded-2xl p-2 font-bold  hover:bg-pink-500  hover:border-white font-serif btn "
-          >
-            <span className="">GitHub</span>
-            <img src="/assets/github.png" alt="" className="h-[1rem]" />
-          </a>
-          <a
-            href={links[2]}
-            className="flex justify-center items-center border border-black font-bold rounded-2xl p-2  hover:bg-pink-500 hover:border-white font-serif btn  "
-          >
-            <span className="">live Demo</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-}
 function Intro() {
   return (
     <div className="md:w-1/3 flex flex-col w-full mt-5  px-5">
@@ -200,36 +105,6 @@ function AboutMe() {
   );
 }
 
-function Skills() {
-  const skills = [
-    "HTML",
-    "CSS",
-    "Tailwind",
-    "React",
-    "Ruby",
-    "Hotwire",
-    "Ruby on Rails",
-    "Vanilla Js",
-    "Postgres SQl",
-  ];
-  return (
-    <div id="skills" className="flex justify-center mt-5 p-5">
-      <div className="grid gap-5 grid-cols-3">
-        {skills.map((skill) => (
-          <Skill key={skill}>{skill}</Skill>
-        ))}
-      </div>
-    </div>
-  );
-}
-function Skill({ children }) {
-  return (
-    <div className="flex items-center text-xl font-bold font-mono pulse ">
-      <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
-      <span>{children}</span>
-    </div>
-  );
-}
 function HamburgerMenu() {
   const hamburger = useRef(null);
   const mobileMenu = useRef(null);
@@ -279,13 +154,19 @@ function HamburgerMenu() {
           href="#projects"
           className="hover:text-pink-500 font-mono btn tracking-widest"
         >
-          Projects
+          FullStack Projects
         </a>
         <a
           href="#contacts"
           classNam="hover:text-pink-500 font-mono  btn tracking-widest"
         >
           Contact
+        </a>
+        <a
+          href="#miniprojects"
+          classNam="hover:text-pink-500 font-mono  btn tracking-widest"
+        >
+          Mini Projects
         </a>
       </div>
     </div>
@@ -309,13 +190,19 @@ function NavBar() {
       </div>
       <div className="group hover:btn">
         <a href="#projects" className="hover:text-pink-500 ">
-          Projects
+          FullStack Projects
         </a>
         <div className="mx-2 group-hover:border-b group-hover:border-blue-50 "></div>
       </div>
       <div className="group hover:btn">
         <a href="#contact" className="hover:text-pink-500 ">
           Contact
+        </a>
+        <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+      </div>
+      <div className="group hover:btn">
+        <a href="#contact" className="hover:text-pink-500 ">
+          Mini Projects
         </a>
         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
       </div>
