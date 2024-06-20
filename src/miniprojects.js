@@ -13,7 +13,7 @@ export default function MiniProjects() {
       <div id="projects" className="grid grid-cols-1 ">
         <Project
           title={"Subscription Forms"}
-          stack={["React Js"]}
+          stack={["React Js", "Tailwind Css"]}
           links={[
             "./assets/subscription.png",
             "",
@@ -23,13 +23,13 @@ export default function MiniProjects() {
         />
         <Project
           title={"Bill Splitter"}
-          stack={["React Js"]}
+          stack={["React Js", "Tailwind Css"]}
           links={["./assets/split.png", "", ""]}
           content={""}
         />
         <Project
           title={"Fylo Landing Page"}
-          stack={["React Js"]}
+          stack={["React Js", "Tailwind Css"]}
           links={[
             "./assets/fylo.png",
             "",
@@ -44,8 +44,8 @@ export default function MiniProjects() {
           content={""}
         />
         <Project
-          title={"Bookmark"}
-          stack={["React Js"]}
+          title={"Bookmark App Landing Page"}
+          stack={["React Js", "Tailwind Css"]}
           links={[
             "./assets/bookmark.png",
             "",
