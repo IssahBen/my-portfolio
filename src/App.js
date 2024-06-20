@@ -60,7 +60,7 @@ function Intro() {
       <div className="flex justify-center mb-2">
         <p className="text-cool_gray tracking-wide text-center">
           Hi, I'm Benedict Issah.A passionate Fullstack Developer based in
-          Winnipeg,Canada. 📍
+          Toronto,Canada. 📍
         </p>
       </div>
       <div className="flex justify-center mt-5 gap-5">
@@ -86,7 +86,7 @@ function AboutMe() {
       <div className="flex font-extrabold text-xl justify-start  font-mono text-black">
         <h2>
           A dedicated Ruby on Rails and React Developer based in
-          Winnipeg,Canada.📍
+          Toronto,Canada.📍
         </h2>
       </div>
       <div className="flex text-cool_gray mt-2 tracking-widest font-serif">
