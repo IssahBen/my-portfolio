@@ -24,9 +24,9 @@ export default function FullStack() {
           content={""}
         />
         <Project
-          title={"Holla Social Media App"}
-          stack={["Ruby On Rails 7", "Tailwind"]}
-          links={[]}
+          title={"Instagram Clone  App"}
+          stack={["Ruby On Rails 7", "Tailwind Css"]}
+          links={["./assets/insta.png"]}
           content={""}
         />
 
