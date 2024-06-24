@@ -5,7 +5,7 @@ import FullStack from "./FullStack";
 import MiniProjects from "./miniprojects";
 export default function App() {
   return (
-    <div className="h-screen w-screen bg-white flex flex-col ">
+    <div className="h-screen w-screen bg-slate-900 flex flex-col ">
       <div className="flex justify-between items-center px-10 py-10">
         {/* <h1 className="font-sans font-bold text-4xl text-marine_blue">
           Ben.dev
@@ -29,7 +29,7 @@ export default function App() {
       </div>
       <div
         id="about"
-        className="flex flex-col w-full md:flex-row md:justify-center  items-center mt-16  md:space-x-5"
+        className="flex flex-col w-full md:flex-row md:justify-center  items-center mt-16  md:space-x-5 bg-slate-900"
       >
         <div className="w-full">
           <img
@@ -41,17 +41,19 @@ export default function App() {
         <AboutMe />
       </div>
 
-      <Skills />
-      <FullStack />
-      <MiniProjects />
-      <Footer />
+      <div className="bg-slate-900">
+        <Skills />
+        <FullStack />
+        <MiniProjects />
+        <Footer />
+      </div>
     </div>
   );
 }
 
 function Intro() {
   return (
-    <div className="md:w-1/3 flex flex-col w-full mt-5  px-5">
+    <div className="md:w-1/3 flex flex-col w-full mt-5  px-5 ">
       <div className="flex w-full justify-center mb-2">
         <h1 className=" text-center font-mono font-extrabold text-3xl">
           FullStack Ruby on Rails and React Developer
@@ -59,7 +61,7 @@ function Intro() {
       </div>
       <div className="flex justify-center mb-2">
         <p className="text-cool_gray tracking-wide text-center">
-          Hi, I'm Benedict Issah.A passionate Fullstack Developer based in
+          Hi, I'm Benedict Issah.A Curious Fullstack Developer based in
           Toronto,Canada. 📍
         </p>
       </div>
@@ -79,26 +81,23 @@ function Intro() {
 
 function AboutMe() {
   return (
-    <div className="flex flex-col md:w-1/3 w-full mt-5 p-5">
+    <div className="flex flex-col md:w-1/3 w-full mt-5 p-5 ">
       <div className="flex justify-start">
         <h2 className="text-pink-500 font-mono font-bold text-xl">About Me</h2>
       </div>
       <div className="flex font-extrabold text-xl justify-start  font-mono text-black">
-        <h2>
-          A dedicated Ruby on Rails and React Developer based in
-          Toronto,Canada.📍
-        </h2>
+        <h2>A Ruby on Rails and React Developer based in Toronto,Canada.📍</h2>
       </div>
-      <div className="flex text-cool_gray mt-2 tracking-widest font-serif">
+      <div className="flex text-cool_gray mt-2 tracking-wide font-sans">
         <p>
-          As a Junior fullstack Developer.I posses an impressive arsenal of
-          skills in HTML,CSS,Javascript,React,Tailwind,Ruby on Rails and
-          Hotwire.I excel in designing and maintaining responsive websites that
-          offer a smooth user experience.My expertise lies in crafting
-          dynamic,engaging interfaces using hotwire turbo or react and also
-          writing optimized code to improve website performance .I'm also a team
-          player who thrives in collaborating with cross-functional teams to
-          produce outstanding web applications.{" "}
+          As a fullstack Developer.I posses an impressive arsenal of skills in
+          HTML,CSS,Javascript,React,Tailwind,Ruby on Rails and Hotwire.I excel
+          in designing and maintaining responsive websites that offer a smooth
+          user experience.My expertise lies in crafting dynamic,engaging
+          interfaces using hotwire turbo or react and also writing optimized
+          code to improve website performance .I'm also a team player who
+          thrives in collaborating with cross-functional teams to produce
+          outstanding web applications.{" "}
         </p>
       </div>
     </div>
@@ -126,7 +125,7 @@ function HamburgerMenu() {
         id="menu-btn"
         type="button"
         ref={hamburger}
-        className="  z-40 block hamburger md:hidden focus:outline-none"
+        className="  z-40 block hamburger md:hidden focus:outline-none "
         onClick={HandleClick}
       >
         <span className="hamburger-top"></span>
@@ -136,7 +135,7 @@ function HamburgerMenu() {
       <div
         id="menu"
         ref={mobileMenu}
-        className="absolute top-0 right-0 hidden flex-col z-4  w-1/2 h-72 py-1 pt-10 pl-24 space-y-2 text-lg text-marine_blue uppercase bg-white"
+        className="absolute top-14 right-0 hidden flex-col z-4  w-1/2 h-72 py-1 pt-10 pl-24 space-y-2 text-lg text-white uppercase bg-slate-900 z-10"
       >
         <a
           href="#home"
@@ -158,13 +157,13 @@ function HamburgerMenu() {
         </a>
         <a
           href="#contacts"
-          classNam="hover:text-pink-500 font-mono  btn tracking-widest"
+          className="hover:text-pink-500 font-mono  btn tracking-widest"
         >
           Contact
         </a>
         <a
           href="#miniprojects"
-          classNam="hover:text-pink-500 font-mono  btn tracking-widest"
+          className="hover:text-pink-500 font-mono  btn tracking-widest"
         >
           Mini Projects
         </a>

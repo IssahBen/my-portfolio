@@ -181,7 +181,7 @@ nav {
 }
 
 .pulse {
-  animation: pulse 1s infinite ease-in-out alternate;
+  animation: pulse 5s infinite ease-in-out alternate;
 }
 @keyframes pulse {
   from {

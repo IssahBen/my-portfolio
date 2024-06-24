@@ -12,7 +12,7 @@ export default function Skills() {
   ];
   return (
     <div id="skills" className="flex justify-center mt-5 p-5">
-      <div className="grid gap-5 grid-cols-3">
+      <div className="grid gap-8 grid-cols-3">
         {skills.map((skill) => (
           <Skill key={skill}>{skill}</Skill>
         ))}
@@ -23,7 +23,7 @@ export default function Skills() {
 
 function Skill({ children }) {
   return (
-    <div className="flex items-center text-xl font-bold font-mono pulse ">
+    <div className="flex items-center text-sm font-bold font-mono pulse ">
       <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
       <span>{children}</span>
     </div>
