@@ -10,7 +10,7 @@ export default function MiniProjects() {
           Mini projects always give the best skill check🌱
         </p>
       </div>
-      <div id="projects" className="grid grid-cols-1 ">
+      <div id="projects" className="grid grid-cols-1  w-full">
         <SmallProject
           title={"Subscription Forms"}
           stack={["React Js", "Tailwind Css"]}

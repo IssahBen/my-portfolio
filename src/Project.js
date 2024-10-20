@@ -1,6 +1,6 @@
 export default function Project({ title, stack, links, content }) {
   return (
-    <div className="flex md:flex-row flex-col p-8 md:space-x-5 ">
+    <div className="flex md:flex-row flex-col p-8 md:space-x-20 w-full  ">
       <div className="flex justify-center items-center">
         {" "}
         <img src={links[0]} alt="" className="  bg-cover rounded-md " />

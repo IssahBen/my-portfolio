@@ -41,7 +41,7 @@ export default function App() {
         <AboutMe />
       </div>
 
-      <div className="bg-slate-900">
+      <div className="bg-black">
         <Skills />
         <FullStack />
         <MiniProjects />

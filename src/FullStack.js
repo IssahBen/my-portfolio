@@ -15,7 +15,7 @@ export default function FullStack() {
           title={"WeVote App"}
           stack={["Ruby On Rails 7", "React Js", "Tailwind Css"]}
           links={[
-            "./assets/Wevote.png",
+            "./assets/wevote1.png",
             "https://github.com/IssahBen/voting-app-react",
             "https://wevotepush.netlify.app",
           ]}
@@ -27,7 +27,7 @@ export default function FullStack() {
           title={"TheSoundz Store"}
           stack={["React Js", "Tailwind Css"]}
           links={[
-            "./assets/soundz3.jpeg",
+            "./assets/soundz3.png",
             "https://github.com/IssahBen/audiostore",
             "https://resplendent-kheer-c90002.netlify.app",
           ]}
@@ -40,7 +40,7 @@ export default function FullStack() {
           title={"CandyCrusher  "}
           stack={["React Js", "Tailwind Css", "Ruby on Rails"]}
           links={[
-            "./assets/candyapp.png",
+            "./assets/candy1.png",
             "https://github.com/IssahBen/candy-crush-react",
             "https://candycrusher.netlify.app/",
           ]}
