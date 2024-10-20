@@ -1,4 +1,3 @@
-import Project from "./Project";
 import SmallProject from "./SmallProjects";
 export default function MiniProjects() {
   return (
