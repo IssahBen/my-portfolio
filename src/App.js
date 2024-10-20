@@ -41,7 +41,7 @@ export default function App() {
         <AboutMe />
       </div>
 
-      <div className="bg-black">
+      <div className="bg-black w-full">
         <Skills />
         <FullStack />
         <MiniProjects />
@@ -81,7 +81,7 @@ function Intro() {
 
 function AboutMe() {
   return (
-    <div className="flex flex-col md:w-1/3 w-full mt-5 p-5 ">
+    <div className="flex flex-col md:w-6/12 w-full mt-5 p-5  ">
       <div className="flex justify-start">
         <h2 className="text-pink-500 font-mono font-bold text-xl">About Me</h2>
       </div>
