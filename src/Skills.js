@@ -23,7 +23,7 @@ export default function Skills() {
 
 function Skill({ children }) {
   return (
-    <div className="flex items-center text-sm font-bold font-mono pulse ">
+    <div className="flex items-center text-sm font-bold font-mono pulse text-white ">
       <img src="/assets/checkmark.png" alt="" className="h-[2rem]" />
       <span>{children}</span>
     </div>

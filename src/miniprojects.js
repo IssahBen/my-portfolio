@@ -1,4 +1,5 @@
 import Project from "./Project";
+import SmallProject from "./SmallProjects";
 export default function MiniProjects() {
   return (
     <div id="miniprojects" className="flex flex-col items-center mb-10">
@@ -6,44 +7,48 @@ export default function MiniProjects() {
         <h3 className="font-bold text-xl font-serif text-blue-800">
           Mini Projects
         </h3>
-        <p className="font-extrabold text-2xl">
+        <p className="font-extrabold text-2xl text-white">
           Mini projects always give the best skill check🌱
         </p>
       </div>
       <div id="projects" className="grid grid-cols-1 ">
-        <Project
+        <SmallProject
           title={"Subscription Forms"}
           stack={["React Js", "Tailwind Css"]}
           links={[
             "./assets/subscription.png",
-            "",
-            "https://partagery.netlify.app/",
+            "https://github.com/IssahBen/forms",
+            "https://subscriptionforms.netlify.app/",
           ]}
           content={""}
         />
-        <Project
+        <SmallProject
           title={"Bill Splitter"}
           stack={["React Js", "Tailwind Css"]}
-          links={["./assets/split.png", "", ""]}
+          links={[
+            "./assets/split.png",
+            "https://github.com/IssahBen/split",
+            "https://partagery.netlify.app",
+          ]}
           content={""}
         />
-        <Project
+        <SmallProject
           title={"Fylo Landing Page"}
           stack={["React Js", "Tailwind Css"]}
           links={[
             "./assets/fylo.png",
-            "",
+            "https://github.com/IssahBen/fylo1",
             "https://splendid-brigadeiros-26a017.netlify.app/",
           ]}
           content={""}
         />
-        <Project
+        <SmallProject
           title={"Remote Job Landing Page "}
           stack={["React Js", "Tailwind Css"]}
           links={["./assets/Remote.png", "", "https://sikasem.netlify.app/"]}
           content={""}
         />
-        <Project
+        <SmallProject
           title={"Bookmark App Landing Page"}
           stack={["React Js", "Tailwind Css"]}
           links={[
@@ -53,7 +58,7 @@ export default function MiniProjects() {
           ]}
           content={""}
         />
-        <Project
+        <SmallProject
           title={"SunnySide landing Page"}
           stack={["React Js", "Tailwind Css"]}
           links={[

@@ -6,7 +6,7 @@ export default function FullStack() {
         <h3 className="font-bold text-xl font-serif text-blue-800">
           Full Stack Projects
         </h3>
-        <p className="font-extrabold text-2xl">
+        <p className="font-extrabold text-2xl text-white">
           Each project is a unique place of development🌱
         </p>
       </div>
@@ -14,24 +14,26 @@ export default function FullStack() {
         <Project
           title={"WeVote App"}
           stack={["Ruby On Rails 7", "React Js", "Tailwind Css"]}
-          links={["./assets/Wevote.png", "", ""]}
+          links={[
+            "./assets/Wevote.png",
+            "https://github.com/IssahBen/voting-app-react",
+            "https://wevotepush.netlify.app",
+          ]}
           content={
             "Wevote  a voting app designed to streamline the process for elections for organizational decisions.The Application was built React on the frontend and Ruby on Rails on the Backend."
           }
         />
         <Project
           title={"TheSoundz Store"}
-          stack={["Ruby On Rails 7", "React Js", "Tailwind Css"]}
-          links={["./assets/soundz3.jpeg", "", ""]}
+          stack={["React Js", "Tailwind Css"]}
+          links={[
+            "./assets/soundz3.jpeg",
+            "https://github.com/IssahBen/audiostore",
+            "https://resplendent-kheer-c90002.netlify.app",
+          ]}
           content={
-            "A simple Niche Store built with React on the Frontend , Rails on the backend and stripe integration.The goal of this project was to build a simple online store comprised of reusable components that can easily  be altered to create any kind of niche store."
+            "A simple Niche Store built with React on the Frontend.The goal of this project was to build a simple online store comprised of reusable components that can easily  be altered to create any kind of niche store."
           }
-        />
-        <Project
-          title={"Social Media App(Will rebuild)"}
-          stack={["Ruby On Rails 7", "Tailwind Css"]}
-          links={["./assets/insta.png"]}
-          content={""}
         />
 
         <Project
@@ -49,7 +51,11 @@ export default function FullStack() {
         <Project
           title={"Cinema"}
           stack={["Ruby on Rails"]}
-          links={["./assets/cinema.png", "", ""]}
+          links={[
+            "./assets/cinema.png",
+            "https://github.com/IssahBen/cinema",
+            "https://github.com/IssahBen/cinema",
+          ]}
           content={
             "This FullStack Application was built A month After  learning Ruby on Rails.This  application was designed and built to test my understanding of Rails.Cinema a movie streaming and management  application.With the help of the Omdb Movies database API users can search for latest  movies and with a feature called a bucket users can organize a list of their favorite or must watch movies."
           }

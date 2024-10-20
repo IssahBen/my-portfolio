@@ -5,7 +5,7 @@ import FullStack from "./FullStack";
 import MiniProjects from "./miniprojects";
 export default function App() {
   return (
-    <div className="h-screen w-screen bg-slate-900 flex flex-col ">
+    <div className="h-screen w-screen bg-white flex flex-col ">
       <div className="flex justify-between items-center px-10 py-10">
         {/* <h1 className="font-sans font-bold text-4xl text-marine_blue">
           Ben.dev
@@ -29,7 +29,7 @@ export default function App() {
       </div>
       <div
         id="about"
-        className="flex flex-col w-full md:flex-row md:justify-center  items-center mt-16  md:space-x-5 bg-slate-900"
+        className="flex flex-col w-full md:flex-row md:justify-center  items-center mt-16  md:space-x-5 bg-white"
       >
         <div className="w-full">
           <img
@@ -135,35 +135,35 @@ function HamburgerMenu() {
       <div
         id="menu"
         ref={mobileMenu}
-        className="absolute top-14 right-0 hidden flex-col z-4  w-1/2 h-72 py-1 pt-10 pl-24 space-y-2 text-lg text-white uppercase bg-slate-900 z-10"
+        className="absolute top-14 right-0 hidden flex-col z-4  w-1/2 h-72 py-1 pt-10 pl-24 space-y-2 text-lg text-slate-900 uppercase bg-white z-10"
       >
         <a
           href="#home"
-          className="hover:text-pink-500 font-mono btn tracking-widest"
+          className="hover:text-red-500 font-mono btn tracking-widest"
         >
           Home
         </a>
         <a
           href="#about"
-          className="hover:text-pink-500 font-mono btn tracking-widest"
+          className="hover:text-red-500 font-mono btn tracking-widest"
         >
           About
         </a>
         <a
           href="#projects"
-          className="hover:text-pink-500 font-mono btn tracking-widest"
+          className="hover:text-red-500 font-mono btn tracking-widest"
         >
           FullStack Projects
         </a>
         <a
           href="#contacts"
-          className="hover:text-pink-500 font-mono  btn tracking-widest"
+          className="hover:text-red-500 font-mono  btn tracking-widest"
         >
           Contact
         </a>
         <a
           href="#miniprojects"
-          className="hover:text-pink-500 font-mono  btn tracking-widest"
+          className="hover:text-red-500 font-mono  btn tracking-widest"
         >
           Mini Projects
         </a>
@@ -176,31 +176,31 @@ function NavBar() {
   return (
     <div className="hidden h-10 font-serif font-bold md:flex md:space-x-8">
       <div className="group hover:btn">
-        <a href="#home" className="hover:text-pink-500 ">
+        <a href="#home" className="hover:text-red-500 ">
           Home
         </a>
         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
       </div>
       <div className="group hover:btn">
-        <a href="#about" className="hover:text-pink-500 ">
+        <a href="#about" className="hover:text-red-500 ">
           About
         </a>
         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
       </div>
       <div className="group hover:btn">
-        <a href="#projects" className="hover:text-pink-500 ">
+        <a href="#projects" className="hover:text-red-500 ">
           FullStack Projects
         </a>
         <div className="mx-2 group-hover:border-b group-hover:border-blue-50 "></div>
       </div>
       <div className="group hover:btn">
-        <a href="#contact" className="hover:text-pink-500 ">
+        <a href="#contact" className="hover:text-red-500 ">
           Contact
         </a>
         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
       </div>
       <div className="group hover:btn">
-        <a href="#contact" className="hover:text-pink-500 ">
+        <a href="#contact" className="hover:text-red-500 ">
           Mini Projects
         </a>
         <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
@@ -213,8 +213,8 @@ function Footer() {
   return (
     <>
       <section id="contacts" className="font-serif">
-        <p className="section__text__p1">Get in touch</p>
-        <h1 className="title">Contact</h1>
+        <p className="section__text__p1 text-white">Get in touch</p>
+        <h1 className="title text-white">Contact</h1>
         <div className="contact-info-upper-container">
           <div className="contact-info-container">
             <img src="./assets/email.png" className="email-icon" alt="email" />
@@ -239,24 +239,26 @@ function Footer() {
       </section>
       <footer>
         <nav>
-          <div className="nav-links-container font-serif">
+          <div className="nav-links-container font-serif text-white">
             <ul className="nav-links">
-              <li className="hover:text-pink-500 btn">
+              <li className="hover:text-red-500 btn">
                 <a href="#about ">About</a>
               </li>
-              <li className="hover:text-pink-500 btn">
+              <li className="hover:text-red-500 btn">
                 <a href="#skills">Skills</a>
               </li>
-              <li className="hover:text-pink-500 btn">
+              <li className="hover:text-red-500 btn">
                 <a href="#projects">Projects</a>
               </li>
-              <li className="hover:text-pink-500 btn">
+              <li className="hover:text-red-500 btn">
                 <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </nav>
-        <p>Copyright &#169; 2024 Ohiahene.All Rights reserved.</p>
+        <p className="text-white">
+          Copyright &#169; 2024 Ohiahene.All Rights reserved.
+        </p>
       </footer>
     </>
   );
