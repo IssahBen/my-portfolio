@@ -38,7 +38,7 @@ export default function FullStack() {
 
         <Project
           title={"CandyCrusher  "}
-          stack={["React Js", "Tailwind Css", "Ruby on Rails"]}
+          stack={["React Js", "Tailwind Css", "Rails 7"]}
           links={[
             "./assets/candy1.png",
             "https://github.com/IssahBen/candy-crush-react",
@@ -47,6 +47,16 @@ export default function FullStack() {
           content={
             "CandyCrusher a clone of the famous candy crush mobile Game.This Application was built with React on the Frontend and Ruby on Rails on the Backend.My interest to build this game from the challenging nature of the game logic and my desire to master the basics of React hooks and reusable components ."
           }
+        />
+        <Project
+          title={"Designo  "}
+          stack={["React Js", "Tailwind Css"]}
+          links={[
+            "./assets/designo.png",
+            "https://github.com/IssahBen/designo",
+            "https://aquamarine-crisp-989419.netlify.app/",
+          ]}
+          content={"Designo is a multipage company website"}
         />
         <Project
           title={"Cinema"}
