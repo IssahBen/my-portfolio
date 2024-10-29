@@ -50,13 +50,15 @@ export default function FullStack() {
         />
         <Project
           title={"Designo  "}
-          stack={["React Js", "Tailwind Css"]}
+          stack={["React Js", "Tailwind Css", "Rails 7"]}
           links={[
             "./assets/designo.png",
             "https://github.com/IssahBen/designo",
             "https://aquamarine-crisp-989419.netlify.app/",
           ]}
-          content={"Designo is a multipage company website"}
+          content={
+            "Designo is a multipage company website built with React on the frontend and Rails on the backend .It uses ActionMailer and gmail to send emails to Contacts and Admins"
+          }
         />
         <Project
           title={"Cinema"}
