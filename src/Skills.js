@@ -9,6 +9,7 @@ export default function Skills() {
     "Ruby on Rails",
     "Vanilla Js",
     "Postgres SQl",
+    "React native "
   ];
   return (
     <div id="skills" className="flex justify-center mt-5 p-5">

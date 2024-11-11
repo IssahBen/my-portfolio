@@ -72,6 +72,18 @@ export default function FullStack() {
             "This FullStack Application was built A month After  learning Ruby on Rails.This  application was designed and built to test my understanding of Rails.Cinema a movie streaming and management  application.With the help of the Omdb Movies database API users can search for latest  movies and with a feature called a bucket users can organize a list of their favorite or must watch movies."
           }
         />
+        <Project
+          title={"Splitter"}
+          stack={["React Native ","NativeWind Css"]}
+          links={[
+            "./assets/splitnative.jpg",
+            "https://github.com/IssahBen/SplitMobile",
+            "https://github.com/IssahBen/SplitMobile",
+          ]}
+          content={
+            "This is a simple utility mobile app built with React Native to Share Bills amongst people"
+          }
+        />
       </div>
     </div>
   );
