@@ -46,7 +46,10 @@ export default function App() {
       <div className="bg-black w-full">
         {/* <Skills /> */}
         <FullStack />
-        <section className="bg-neutral-900 py-12 px-4  mx-32" id="projects">
+        <section
+          className="bg-neutral-900 py-12 px-4 sm:px-6 lg:px-8"
+          id="projects"
+        >
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
             <div className="text-white flex-1 space-y-4 px-4">
               <h2 className="text-3xl md:text-4xl font-bold text-pink-400">
@@ -73,14 +76,15 @@ export default function App() {
             </div>
           </div>
         </section>
+
         <section
-          className="bg-neutral-900 py-12 px-4 mx-32 mb-10"
+          className="bg-neutral-900 py-12 px-4 sm:px-6 lg:px-8 mb-10"
           id="projects"
         >
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
             <div className="text-white flex-1 space-y-4 px-4">
               <h2 className="text-3xl md:text-4xl font-bold text-pink-400">
-                Ai Health Diagnosis App(extra features included)
+                Ai Health Diagnosis App (extra features included)
               </h2>
               <p className="text-lg text-gray-300">
                 Built with <span className="text-blue-400">React</span> and{" "}
