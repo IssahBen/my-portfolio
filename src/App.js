@@ -22,7 +22,7 @@ export default function App() {
       >
         <div className="">
           <img
-            src="/assets/my1.png"
+            src="/assets/me2.JPG"
             alt=""
             className=" saturate-200  w-[250px] h-[250px] rounded-xl shadow-2xl shape brightness-100"
           />
@@ -127,16 +127,6 @@ function Intro() {
         <p className="text-cool_gray tracking-wide text-center">
           Hi, I'm Benedict Issah.Fullstack Developer based in Toronto,Canada. 📍
         </p>
-      </div>
-      <div className="flex justify-center mt-5 gap-5">
-        <img src="/assets/linkedin.png" alt="" className="h-[2rem] " />
-        <a
-          href="https://github.com/IssahBen"
-          className="hover:-translate-y-2 hover:scale-100"
-        >
-          {" "}
-          <img src="/assets/github.png" alt="" className="h-[2rem]  " />
-        </a>
       </div>
     </div>
   );
