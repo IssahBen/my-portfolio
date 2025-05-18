@@ -1,6 +1,6 @@
 export default function SmallProject({ title, stack, links, content }) {
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start p-6 sm:p-8 gap-8 md:gap-20 w-full">
+    <div className="flex flex-col  md:flex-row items-center md:items-start p-6 sm:p-8 gap-8 md:gap-20 w-full">
       <div className="flex justify-center md:justify-start w-full md:w-1/2">
         <img
           src={links[0]}
@@ -10,7 +10,7 @@ export default function SmallProject({ title, stack, links, content }) {
       </div>
 
       <div className="flex flex-col w-full md:w-1/2 text-center md:text-left">
-        <p className="font-bold text-2xl tracking-wide text-white font-serif mb-4">
+        <p className="font-bold text-xl tracking-wide text-white font-serif mb-4">
           {title}
         </p>
         <p className="text-gray-400 text-base tracking-wide font-serif mb-6">
