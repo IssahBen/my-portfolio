@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import video from "./retailOs.MP4";
-import Skills from "./Skills";
+
 import FullStack from "./FullStack";
 import MiniProjects from "./miniprojects";
 import VideoPlayer from "./VideoPlayer";
