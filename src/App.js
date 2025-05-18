@@ -12,7 +12,7 @@ export default function App() {
         {/* <h1 className="font-sans font-bold text-4xl text-marine_blue">
           Ben.dev
         </h1> */}
-        <img src="/assets/push2.png" className="h-[120px] flip " alt="logo" />
+        <img src="/assets/push2.png" className="h-[120px]  " alt="logo" />
         <HamburgerMenu />
         <NavBar />
       </div>
