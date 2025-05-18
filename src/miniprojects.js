@@ -1,16 +1,21 @@
 import SmallProject from "./SmallProjects";
+
 export default function MiniProjects() {
   return (
-    <div id="miniprojects" className="flex flex-col items-center mb-10 mx-32">
-      <div className="flex flex-col  w-full pl-8 items-start">
-        <h3 className="font-bold text-xl font-serif text-blue-800">
+    <div
+      id="miniprojects"
+      className="flex flex-col items-center mb-10 px-4 sm:px-8 lg:mx-32"
+    >
+      <div className="flex flex-col w-full items-start mb-6">
+        <h3 className="font-bold text-lg sm:text-xl font-serif text-blue-800">
           Mini Projects
         </h3>
-        <p className="font-extrabold text-2xl text-white">
-          Mini projects always give the best skill check🌱
+        <p className="font-extrabold text-xl sm:text-2xl text-white">
+          Mini projects always give the best skill check 🌱
         </p>
       </div>
-      <div id="projects" className="grid grid-cols-1  w-full">
+
+      <div id="projects" className="grid grid-cols-1 w-full gap-8">
         <SmallProject
           title={"Subscription Forms"}
           stack={["React Js", "Tailwind Css"]}
@@ -42,7 +47,7 @@ export default function MiniProjects() {
           content={""}
         />
         <SmallProject
-          title={"Remote Job Landing Page "}
+          title={"Remote Job Landing Page"}
           stack={["React Js", "Tailwind Css"]}
           links={["./assets/Remote.png", "", "https://sikasem.netlify.app/"]}
           content={""}

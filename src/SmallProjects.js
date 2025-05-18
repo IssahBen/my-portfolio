@@ -1,33 +1,32 @@
 export default function SmallProject({ title, stack, links, content }) {
   return (
-    <div className="flex md:flex-row  flex-col p-8 md:space-x-20  w-full">
-      <div className="flex justify-center items-center">
-        {" "}
-        <img src={links[0]} alt="" className="  bg-cover rounded-md " />
+    <div className="flex flex-col md:flex-row items-center md:items-start p-6 sm:p-8 gap-8 md:gap-20 w-full">
+      <div className="flex justify-center md:justify-start w-full md:w-1/2">
+        <img
+          src={links[0]}
+          alt=""
+          className="w-full max-w-md object-cover rounded-md"
+        />
       </div>
 
-      <div className="flex flex-col md:w-1/3">
-        <div className="flex justify-center mt-5">
-          <p className="font-bold text-xl tracking-wide text-white font-serif">
-            {title}
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <p className=" text-thin tracking-wide text-cool_gray text-center font-serif">
-            {content}
-          </p>
-        </div>
-        <div className="flex justify-center space-x-5 font-extrabold  font-serif mt-8 text-white ">
-          {stack.map((stack) => (
-            <span key={stack}>{stack}</span>
+      <div className="flex flex-col w-full md:w-1/2 text-center md:text-left">
+        <p className="font-bold text-2xl tracking-wide text-white font-serif mb-4">
+          {title}
+        </p>
+        <p className="text-gray-400 text-base tracking-wide font-serif mb-6">
+          {content}
+        </p>
+        <div className="flex justify-center md:justify-start flex-wrap gap-4 font-extrabold font-serif text-white mb-6">
+          {stack.map((tech) => (
+            <span key={tech}>{tech}</span>
           ))}
         </div>
-        <div className="flex  w-full justify-center mt-8 space-x-5 ">
+        <div className="flex justify-center md:justify-start">
           <a
             href={links[2]}
-            className="flex justify-center items-center border bg-white border-black font-bold rounded-2xl p-2  hover:bg-red-500 hover:border-red-500 font-serif btn  "
+            className="border bg-white text-black border-black font-bold rounded-2xl px-4 py-2 hover:bg-red-500 hover:text-white hover:border-red-500 transition-all duration-300 font-serif"
           >
-            <span className="">live Demo</span>
+            Live Demo
           </a>
         </div>
       </div>
