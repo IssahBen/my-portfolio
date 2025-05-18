@@ -298,9 +298,7 @@ function Footer() {
               <li className="hover:text-red-500 btn">
                 <a href="#about ">About</a>
               </li>
-              <li className="hover:text-red-500 btn">
-                <a href="#skills">Skills</a>
-              </li>
+
               <li className="hover:text-red-500 btn">
                 <a href="#projects">Projects</a>
               </li>
