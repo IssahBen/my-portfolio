@@ -1,7 +1,7 @@
 import SmallProject from "./SmallProjects";
 export default function MiniProjects() {
   return (
-    <div id="miniprojects" className="flex flex-col items-center mb-10">
+    <div id="miniprojects" className="flex flex-col items-center mb-10 mx-32">
       <div className="flex flex-col  w-full pl-8 items-start">
         <h3 className="font-bold text-xl font-serif text-blue-800">
           Mini Projects

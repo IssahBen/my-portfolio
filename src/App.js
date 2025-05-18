@@ -1,8 +1,10 @@
 import { useRef } from "react";
-
+import video from "./retailOs.MP4";
 import Skills from "./Skills";
 import FullStack from "./FullStack";
 import MiniProjects from "./miniprojects";
+import VideoPlayer from "./VideoPlayer";
+import elixir from "./elixir.MP4";
 export default function App() {
   return (
     <div className="h-screen w-screen bg-white flex flex-col ">
@@ -42,8 +44,66 @@ export default function App() {
       </div>
 
       <div className="bg-black w-full">
-        <Skills />
+        {/* <Skills /> */}
         <FullStack />
+        <section className="bg-neutral-900 py-12 px-4  mx-32" id="projects">
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <div className="text-white flex-1 space-y-4 px-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-pink-400">
+                RetailOS
+              </h2>
+              <p className="text-lg text-gray-300">
+                Built with <span className="text-blue-400">React</span> and{" "}
+                <span className="text-red-400">Ruby on Rails</span>
+              </p>
+              <p className="text-gray-400">
+                A powerful POS+ Inventory mobile platform demo tailored for
+                retail businesses. This demo showcases smooth video playback and
+                high interactivity.
+              </p>
+            </div>
+
+            <div className="flex-1 w-full max-w-xl shadow-xl rounded-xl overflow-hidden border border-gray-700">
+              <VideoPlayer
+                source={video}
+                title="RetailOs Demo"
+                autoPlay={false}
+                showControls={true}
+              />
+            </div>
+          </div>
+        </section>
+        <section
+          className="bg-neutral-900 py-12 px-4 mx-32 mb-10"
+          id="projects"
+        >
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <div className="text-white flex-1 space-y-4 px-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-pink-400">
+                Ai Health Diagnosis App(extra features included)
+              </h2>
+              <p className="text-lg text-gray-300">
+                Built with <span className="text-blue-400">React</span> and{" "}
+                <span className="text-red-400">Ruby on Rails</span>
+              </p>
+              <p className="text-gray-400">
+                AI powered health mobile app demo tailored for personal use.
+                This demo showcases smooth video playback and high
+                interactivity.
+              </p>
+            </div>
+
+            <div className="flex-1 w-full max-w-xl shadow-xl rounded-xl overflow-hidden border border-gray-700">
+              <VideoPlayer
+                source={elixir}
+                title="Elixir Ai Health App Demo"
+                autoPlay={false}
+                showControls={true}
+              />
+            </div>
+          </div>
+        </section>
+
         <MiniProjects />
         <Footer />
       </div>
@@ -56,23 +116,22 @@ function Intro() {
     <div className="md:w-1/3 flex flex-col w-full mt-5  px-5 ">
       <div className="flex w-full justify-center mb-2">
         <h1 className=" text-center font-mono font-extrabold text-3xl">
-          FullStack Ruby on Rails and React Developer
+          Ruby on Rails and React JS Developer
         </h1>
       </div>
       <div className="flex justify-center mb-2">
         <p className="text-cool_gray tracking-wide text-center">
-          Hi, I'm Benedict Issah.A Curious Fullstack Developer based in
-          Toronto,Canada. 📍
+          Hi, I'm Benedict Issah.Fullstack Developer based in Toronto,Canada. 📍
         </p>
       </div>
       <div className="flex justify-center mt-5 gap-5">
-        <img src="/assets/linkedin.png" alt="" className="h-[2rem] flip " />
+        <img src="/assets/linkedin.png" alt="" className="h-[2rem] " />
         <a
           href="https://github.com/IssahBen"
           className="hover:-translate-y-2 hover:scale-100"
         >
           {" "}
-          <img src="/assets/github.png" alt="" className="h-[2rem] flip " />
+          <img src="/assets/github.png" alt="" className="h-[2rem]  " />
         </a>
       </div>
     </div>
@@ -90,14 +149,15 @@ function AboutMe() {
       </div>
       <div className="flex text-cool_gray mt-2 tracking-wide font-sans">
         <p>
-          As a fullstack Developer.I posses an impressive arsenal of skills in
-          HTML,CSS,Javascript,React,Tailwind,Ruby on Rails and Hotwire.I excel
-          in designing and maintaining responsive websites that offer a smooth
-          user experience.My expertise lies in crafting dynamic,engaging
-          interfaces using hotwire turbo or react and also writing optimized
-          code to improve website performance .I'm also a team player who
-          thrives in collaborating with cross-functional teams to produce
-          outstanding web applications.{" "}
+          As a Full-Stack Developer, I specialize in building robust,
+          high-performance web applications using Ruby on Rails and React. I
+          excel at designing and maintaining scalable systems and crafting
+          dynamic, responsive interfaces that deliver a seamless user
+          experience. My focus is on writing clean, efficient code and building
+          maintainable features that improve application performance and
+          reliability. I'm also a strong collaborator who thrives in
+          cross-functional teams, contributing to the development of impactful,
+          user-centric digital solutions.
         </p>
       </div>
     </div>
