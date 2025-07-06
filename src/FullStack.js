@@ -4,7 +4,7 @@ export default function FullStack() {
   return (
     <section
       id="projects"
-      className="bg-neutral-900 py-16 px-6 max-w-7xl mx-auto"
+      className="bg-neutral-900 py-16 px-6 w-full"
       aria-label="Full Stack Projects"
     >
       <header className="mb-12 max-w-3xl mx-auto text-center">

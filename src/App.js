@@ -5,6 +5,7 @@ import FullStack from "./FullStack";
 import MiniProjects from "./miniprojects";
 import VideoPlayer from "./VideoPlayer";
 import elixir from "./elixir.MP4";
+import veebraids from "./veebraids.MP4";
 export default function App() {
   return (
     <div className="h-screen w-screen bg-white flex flex-col ">
@@ -48,7 +49,7 @@ export default function App() {
         <FullStack />
         <section
           className="bg-neutral-900 py-12 px-4 sm:px-6 lg:px-8"
-          id="projects"
+          id="retailOs"
         >
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
             <div className="text-white flex-1 space-y-4 px-4">
@@ -57,7 +58,7 @@ export default function App() {
               </h2>
               <p className="text-lg text-gray-300">
                 Built with <span className="text-blue-400">React</span> and{" "}
-                <span className="text-red-400">Ruby on Rails</span>
+                <span className="text-red-400">Ruby on Rails API</span>
               </p>
               <p className="text-gray-400">
                 A powerful POS+ Inventory mobile platform demo tailored for
@@ -78,8 +79,8 @@ export default function App() {
         </section>
 
         <section
-          className="bg-neutral-900 py-12 px-4 sm:px-6 lg:px-8 mb-10"
-          id="projects"
+          className="bg-neutral-900 py-12 px-4 sm:px-6 lg:px-8 "
+          id="Elixir"
         >
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
             <div className="text-white flex-1 space-y-4 px-4">
@@ -88,7 +89,7 @@ export default function App() {
               </h2>
               <p className="text-lg text-gray-300">
                 Built with <span className="text-blue-400">React</span> and{" "}
-                <span className="text-red-400">Ruby on Rails</span>
+                <span className="text-red-400">Ruby on Rails API</span>
               </p>
               <p className="text-gray-400">
                 AI powered health mobile app demo tailored for personal use.
@@ -101,6 +102,39 @@ export default function App() {
               <VideoPlayer
                 source={elixir}
                 title="Elixir Ai Health App Demo"
+                autoPlay={false}
+                showControls={true}
+              />
+            </div>
+          </div>
+        </section>
+        <section
+          className="bg-neutral-900 py-12 px-4 sm:px-6 lg:px-8 mb-10"
+          id="veebraids"
+        >
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <div className="text-white flex-1 space-y-4 px-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-pink-400">
+                VeeBraids Hair Salon
+              </h2>
+              <p className="text-lg text-gray-300">
+                Built with <span className="text-blue-400">React</span> and{" "}
+                <span className="text-red-400">
+                  Ruby on Rails API and AWS S3
+                </span>
+              </p>
+              <p className="text-gray-400">
+                A full-stack salon booking app built with React, Ruby on Rails
+                API, Tailwind CSS, and AWS S3. Users can view services, book
+                appointments, and receive email confirmations via ActionMailer.
+                Admins manage bookings and services through a custom dashboard.
+              </p>
+            </div>
+
+            <div className="flex-1 w-full max-w-xl shadow-xl rounded-xl overflow-hidden border border-gray-700">
+              <VideoPlayer
+                source={veebraids}
+                title="Hair Salon Website Demo"
                 autoPlay={false}
                 showControls={true}
               />
@@ -120,12 +154,12 @@ function Intro() {
     <div className="md:w-1/3 flex flex-col w-full mt-5  px-5 ">
       <div className="flex w-full justify-center mb-2">
         <h1 className=" text-center font-mono font-extrabold text-3xl">
-          Ruby on Rails and React JS Developer
+          Software Engineer
         </h1>
       </div>
       <div className="flex justify-center mb-2">
         <p className="text-cool_gray tracking-wide text-center">
-          Hi, I'm Benedict Issah.Fullstack Developer based in Toronto,Canada. 📍
+          Hi, I'm Benedict Issah. Engineer based in Toronto,Canada.
         </p>
       </div>
     </div>
@@ -139,19 +173,16 @@ function AboutMe() {
         <h2 className="text-pink-500 font-mono font-bold text-xl">About Me</h2>
       </div>
       <div className="flex font-extrabold text-xl justify-start  font-mono text-black">
-        <h2>A Ruby on Rails and React Developer based in Toronto,Canada.📍</h2>
+        <h2>Self taught FullStack Software Engineer based in toronto.</h2>
       </div>
       <div className="flex text-cool_gray mt-2 tracking-wide font-sans">
         <p>
-          As a Full-Stack Developer, I specialize in building robust,
-          high-performance web applications using Ruby on Rails and React. I
-          excel at designing and maintaining scalable systems and crafting
-          dynamic, responsive interfaces that deliver a seamless user
-          experience. My focus is on writing clean, efficient code and building
-          maintainable features that improve application performance and
-          reliability. I'm also a strong collaborator who thrives in
-          cross-functional teams, contributing to the development of impactful,
-          user-centric digital solutions.
+          Full-Stack Engineer specializing in high-performance web applications
+          using Ruby on Rails, React, React Native, and AWS. I design scalable
+          systems and build dynamic, responsive interfaces with a focus on
+          clean, efficient code. Passionate about performance, reliability, and
+          maintainability, I thrive in cross-functional teams to deliver
+          impactful, user-centric solutions.
         </p>
       </div>
     </div>
