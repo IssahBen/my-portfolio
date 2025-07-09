@@ -154,12 +154,12 @@ function Intro() {
     <div className="md:w-1/3 flex flex-col w-full mt-5  px-5 ">
       <div className="flex w-full justify-center mb-2">
         <h1 className=" text-center font-mono font-extrabold text-3xl">
-          Software Engineer
+          Software Developer
         </h1>
       </div>
       <div className="flex justify-center mb-2">
         <p className="text-cool_gray tracking-wide text-center">
-          Hi, I'm Benedict Issah. Engineer based in Toronto,Canada.
+          Hi, I'm Benedict Issah. Developer based in Toronto,Canada.
         </p>
       </div>
     </div>
@@ -173,7 +173,7 @@ function AboutMe() {
         <h2 className="text-pink-500 font-mono font-bold text-xl">About Me</h2>
       </div>
       <div className="flex font-extrabold text-xl justify-start  font-mono text-black">
-        <h2>Self taught FullStack Software Engineer based in toronto.</h2>
+        <h2>Self taught FullStack Software Developer based in toronto.</h2>
       </div>
       <div className="flex text-cool_gray mt-2 tracking-wide font-sans">
         <p>
